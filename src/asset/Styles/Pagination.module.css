@@ -1,0 +1,85 @@
+.paginationNav {
+  --BgColor: #102c57;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paginationUL {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+.paginationLI {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--BgColor);
+  border-radius: 10px;
+}
+.paginationNavigate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--BgColor);
+  border-radius: 10px;
+  text-align: center;
+}
+.paginationLI a,
+.paginationNavigate a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+}
+.paginationLI a:focus {
+  background-color: var(--BgColor);
+  border-radius: 10px;
+  color: white;
+}
+
+.paginationNavigate a:active {
+  background-color: var(--BgColor);
+  border-radius: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .paginationNav {
+    width: 100%;
+  }
+  .paginationUL {
+    width: 95%;
+    gap: 5px;
+    justify-content: center;
+  }
+  .paginationLI {
+    width: 25px;
+    height: 25px;
+  }
+  .paginationNavigate {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

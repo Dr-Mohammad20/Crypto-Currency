@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+.Container {
+  --MainBgColor: #fff;
+  --SecondBgColor: #102c57;
+  --MenuColor: #eadbc8;
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  padding: 4% 15px;
+  font-weight: bold;
+}
+.LeftContent {
+  flex: 75;
+  height: 100%;
+  max-height: fit-content;
+  background-color: var(--MainBgColor);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.APIInfo {
+  width: 98%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+.Coins {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  height: 9%;
+  width: 98%;
+  background-color: var(--MainBgColor);
+  border-radius: 15px;
+}
+.coinName {
+  color: var(--SecondBgColor);
+}
+.coinInApiName {
+  color: var(--SecondBgColor);
+  font-size: 20px;
+}
+.Coins:nth-child(2n) {
+  background-color: var(--MenuColor);
+  border-radius: 15px;
+}
+.Coins:hover {
+  background-color: var(--SecondBgColor);
+  color: white;
+  cursor: pointer;
+}
+.Coins:hover .coinName {
+  color: white;
+}
+.Coins:hover a {
+  color: white;
+  cursor: pointer;
+}
+.Coins div {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CoinImage {
+  width: 50%;
+  height: 95%;
+  border-radius: 15px;
+}
+.PaginationContainer {
+  width: 80%;
+  height: 7%;
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RightContent {
+  flex: 25;
+  height: 100%;
+  max-height: fit-content;
+  background-color: var(--MenuColor);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.SelectCoinLogo {
+  height: 40%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--SecondBgColor);
+}
+.SelectCoinInfo {
+  height: 50%;
+  width: 100%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coinImage {
+  width: 85%;
+  height: 85%;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .Container {
+    flex-direction: column-reverse;
+    min-height: 100dvh;
+    height: fit-content;
+    gap: 10px;
+  }
+  .LeftContent {
+    width: 100%;
+    min-height: 70svh;
+    height: fit-content;
+  }
+  .RightContent {
+    width: 100%;
+    height: 28svh;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+  }
+  .SelectCoinLogo {
+    width: 38%;
+    height: 90%;
+  }
+  .SelectCoinInfo {
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    font-size: 11px;
+    line-height: 5px;
+  }
+  .APIInfo {
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    gap: 0;
+  }
+  .coinInApiName {
+    font-size: 10px;
+  }
+  .PaginationContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}

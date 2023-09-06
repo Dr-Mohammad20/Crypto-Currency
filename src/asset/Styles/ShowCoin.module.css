@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+.Container {
+  --MainBgColor: #fff;
+  --SecondBgColor: #102c57;
+  --MenuColor: #eadbc8;
+  width: 98%;
+  height: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  background-color: #eff8fa;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: large;
+}
+.CoinImage {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coinLogo {
+  width: 90%;
+}
+.CoinInfo {
+  width: 70%;
+  min-height: 97%;
+  max-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--MenuColor);
+  padding: 2% 3%;
+  border-radius: 15px;
+}
+.Description {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  text-align: justify;
+}
+.CoinInfo a {
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  background-color: var(--SecondBgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 990px) {
+  .Container {
+    font-size: 13px;
+    gap: 2%;
+    min-height: 98%;
+    height: fit-content;
+  }
+  .CoinInfo a {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+}
+
+@media screen and (max-width: 460px) {
+}
